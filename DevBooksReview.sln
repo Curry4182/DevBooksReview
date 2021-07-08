@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "클린 아키텍처", "클린 아키텍처", "{B0703309-E940-4E73-BCA3-8DB04ACED1CA}"
+	ProjectSection(SolutionItems) = preProject
+		1장.txt = 1장.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {60DB6E6F-FBAA-4F70-9718-8AC85B757AA0}
+	EndGlobalSection
+EndGlobal

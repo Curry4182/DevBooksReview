@@ -19,12 +19,12 @@ OO 언어가 제공하기 때문이다. 그리고 이를 통해 데이터와 함수가 응집력 있게 구성된
 이 개념들이 실제 OO언에서는 각각 클래스의 private 멤버 데이터와 public 멤버 함수로 표현된다.
 
 이러한 개념이 OO에만 국한된 것은 아니다. 사실 C 언어에서도 완벽한 캡슐화가 가능하다. 아래의 간단한 C프로그램을 보자.
-#point.h
+point.h
 struct Point;
 struct Point* makePoint(double x, double y)
 double distance (struct Point *p1, struct Point *p2);
 
-#point.c 
+point.c 
 
 #include "point.h"
 #include <stdlib.h>
@@ -54,7 +54,7 @@ Point구조체의 데이터 구조와 함수가 어떻게 구현되었는지에 대해서는 조금도 알지 못
 c++ 컴파일러는 클래스의 인스턴스 크기를 알 수 있어야한다.
 그래서 클래스의 멤버 변수를 해당 클래스의 헤더 파일에 선언할 것을 요구했다.
 
-#point.h
+point.h
 class Point{
 public:
 	Point(double x, double y);
@@ -76,7 +76,7 @@ OO 프로그래밍은 프로그래머가 충분히 올바르게 행동함으로써 캡슐화된 데이터를 우회
 상속? 
 OO 언어가 있기 훨씬 이전에도 C프로그래머는 언어의 도움없이 순수 이러한 방식으로 구현할 수 있었다. 
 
-#namedPoint.h
+namedPoint.h
 
 struct NamedPoint;
 
@@ -84,7 +84,7 @@ struct NamedPoint* makedNamedPoint(double x, double y, char* name);
 void setName(struct NamedPoint* np, char* name);
 char* getName(struct NamedPoint* np);
 
-#namedPoint.c
+namedPoint.c
 
 #include "namedPoint.h"
 #include <stdlib.h>
@@ -110,7 +110,7 @@ char* getName(struct NamedPoint* np){
 	return np->name;
 }
 
-#main.c
+main.c
 
 #include "point.h"
 #include "namedPoint.h"
